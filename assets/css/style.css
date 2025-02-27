@@ -1,0 +1,724 @@
+*{
+    box-sizing: border-box;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+     background-color :rgba(23,23,23,1);
+}
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.1rem 0.5rem 2rem 1rem;
+}
+
+.nav figure {
+    width: 12rem;
+    height: auto;
+    
+}
+
+.nav img {
+    width: 100%;
+    height: auto;
+    padding-top: 35px;
+    padding-left: 25px;
+}
+
+button {
+    all: unset;
+    color: white;
+}  
+
+.pill-button{
+    display: flex;
+    gap: 30px;
+    margin-top: 1rem;
+    height: 50px;
+    border-radius: 50px;
+    padding:10px 50px;
+    background-color: rgb(58, 54, 54);
+}
+
+.pill-button i {
+    font-size: 1.5rem;
+    background-color: transparent;
+}
+
+.shop-nft-button {
+    background-color: #171717;
+    color: yellow;
+    border-radius: 25px;
+    padding: 10px 20px;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.shop-nft-button .nft-icon {
+    background-color: yellow;
+    border-radius: 100%;
+    width: 1rem;
+    height: 1rem;
+    color: #171717;
+    font-size: 0.4rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 0.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+.navbar-right .bell{
+    font-size: 1.5rem;
+    
+}
+
+.profile-button {
+    padding: 1rem;
+    background-color: white;
+    border-radius: 100%;
+    border: 1px solid white;
+    background-image: url("../images/profilepic.png");
+    width: 7px;
+    height: 7px;
+}
+.address-container{
+    padding: 1rem;
+    border-radius: 40px;
+    border: 1px white solid;
+    margin-right: 20px;
+}
+
+.background-image {
+        border-radius: 25px;
+        background-image: url("../images/firstimage.jpg");
+        width: 1450px;
+        height:700px;
+        margin-left: 30px;  
+        margin-top: 20px;
+}    
+
+.background-image h1{
+    padding: 110px 0 0 80px;
+    font-size: 50px;
+    color: white;
+    width: 500px;
+    background-color: transparent;
+}
+.main .pill-button2{
+    font-size: 14px;
+    width: 220px;
+    height: 11px;
+    background-color: rgba(246, 206, 14, 1);
+    border-radius: 50px;
+    color: black;
+    margin-left: 80px;
+    margin-top: 70px;
+    padding: 15px 25px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+
+}    
+.main .background-image .nft{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(19, 18, 13);
+
+}
+.main .background-image .card-header{
+    display: flex;
+    gap: 100px;
+}
+.card-header h3{
+    color: white;
+}
+
+.dropdown-container {
+    position: relative;
+    display: inline-block;    
+}
+
+.dropdown-container_content {
+    display: none;
+    position: absolute;
+    background-color: #212121;  
+    border-radius: 3rem;
+}
+
+.dropdown-container_content * {
+    background-color: #212121;  
+}
+
+.dropdown-container:hover .dropdown-container_content {
+    display: flex;
+}
+
+.profile-button:hover .dropdown-container_content {
+    width: 5rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 19px;
+    transform: translateX(-1rem);
+}
+
+.profile-button .dropdown-container_content > * {
+    width: 100%;
+}
+/*second page **************************************************************/
+.secondpage{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    color: rgba(255,255,255,1);
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+.secondpage h2{
+    color: white;
+}
+.secondpage h3{
+    max-width: 40px;
+}
+.secondpage h4,h5{         
+     
+    color: rgba(96,96, 96,1); 
+}      
+/******************* FEATURED İTEMS******************************************/
+.featureditems{
+    display: flex;               
+    flex-direction: column; 
+
+}
+.stormskin{
+    background-color:rgb(35 34 34);
+    display: flex;
+    border-radius: 20px;
+    margin-top: 15px;
+    height: 100%;
+}
+
+.stormskin .resim img{
+    width: 250px;
+    height: 450px;
+    padding: 30px;
+}
+.stormskin .head{
+    padding: 30px 0 0 40px;
+    line-height: 1.8;
+}
+.stormskin .head p{
+    max-width: 350px;
+   margin-bottom: 35px;
+    font-size: 15px;
+
+}
+.secondpage .head h1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.head .rakamlar{
+    display: flex;
+    gap: 80px;
+}
+.head .rakamlar .bir, .iki, .uc{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.head .eth{
+    display: flex;
+    align-items: center;
+    color:rgba(246, 206, 14, 1) ;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    gap: 15px;
+}
+.head .eth img{
+    width: 23px;
+    height: 23px;
+}
+.head .eth .pill-button3{
+    background-color: rgba(246, 206, 14, 1);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 20px;
+    margin-left: 100px;
+    width: 150px;
+    height: 45px;
+    padding-left: 15px 20px;
+}
+.head .eth .pill-button3 .nft{
+    border-radius: 100%;
+    background-color: #171717;
+    color: rgba(246, 206, 14, 1);
+    font-size: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 23px;
+    height: 23px;
+    
+}
+/******************************POPULAR İTEMS ****************************************/
+.popularitems{
+    display: flex; 
+    flex-direction: column;
+}
+.popularitems .figures{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.figure1, .figure2, .figure3, .figure4 {
+    border-radius: 20px;
+    background-color:rgb(35 34 34);
+    padding: 10px;
+}
+
+.figures .ucgen-price{
+    font-size: 13px;
+    display: flex;
+    color: rgba(246, 206, 14, 1);
+    align-items: center;
+    gap: 8px;
+    margin-top: 18px;
+
+}
+ .figure1{
+    display: flex;
+}
+ .figure1 img{
+    width: 160px;
+    height: 220px;
+}
+.figure1 .description .ucgen-price img{
+    width: 17px; height: 17px;
+}
+
+.figures .figure2{
+    display: flex;
+}
+.figures .figure2 img{
+    width: 160px;
+    height: 220px;
+}
+.figures .description{
+    display: flex;
+    flex-direction: column;
+}
+.figures .figure3 img{
+    width: 320px;
+    height: 100px;
+}
+.figures .figure4 img{
+    width: 320px;
+    height: 100px;
+}
+
+.popularitems p{
+    max-width: 200px;
+    margin-top: 7px;
+    line-height: 1.7;
+    
+}
+
+.popularitems button {
+    background-color: rgba(246, 206, 14, 1);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    border-radius: 20px;
+    width: 120px;
+    height: 35px;
+    margin-top: 15px;
+}
+
+.popularitems button .nft22{
+    border-radius: 100%;
+    background-color: #171717;
+    color: rgba(246, 206, 14, 1);
+    font-size: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 23px;
+    height: 23px;
+}
+.popularitems .figures .flex-olmali{
+    display: flex;
+    gap: 15px;
+
+}
+.popularitems button .btnn{
+    width: 60px;
+    height: 30px;
+    margin-left: 10px;
+}
+/* characters****************************************** */
+.characters{
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: white;
+   
+}
+.char-image{
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 30px;
+    gap: 15px;
+}
+
+.char-image .char1, .char2, .char3, .char4{
+    display: flex; 
+    background-color: #212121;
+    border-radius: 20px; 
+}
+.char-image .char1 img, .char2 img, .char3 img, .char4 img{
+    width: 160px;
+    height: 210px;
+    padding-top: 20px;
+}
+.char-image h2, p{
+    color: white;
+    padding-top: 13px;
+    padding-bottom: 13px;
+   
+}
+.char-image .ucgen-price{
+    font-size: 13px;
+    display: flex;
+    color: rgba(246, 206, 14, 1);
+    align-items: center;
+    gap: 8px;
+    margin-top: 15px;
+    align-items: center;
+}
+.char-image .ucgen-price img{
+    width: 17px;
+    height: 17px;
+    padding: 0;
+}
+.char-image button {
+    background-color: rgba(246, 206, 14, 1);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    border-radius: 20px;
+    width: 120px;
+    height: 35px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.char-image button .nft22{
+    border-radius: 100%;
+    background-color: #171717;
+    color: rgba(246, 206, 14, 1);
+    font-size: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 23px;
+    height: 23px;
+}
+
+.descriptionchars{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+    
+
+}
+/* weapons**************************************************** */
+.weapons{
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: white;
+}
+.weapons-images{
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 30px;
+    gap: 15px;
+}
+.weapons-images p{
+    max-width: 180px;
+    font-size: 12,5px;
+}
+.weapons-images .weapons1, .weapons2, .weapons3, .weapons4{
+    display: flex; 
+    flex-direction: column;
+    background-color: #212121;
+    border-radius: 20px; 
+    padding: 15px;
+    
+}
+
+.weapons-images .weapons1 img, .weapons2 img, .weapons3 img, .weapons4 img{
+    width: 300px;
+    height: 120px;
+}
+.weapons-images .weapons-desc{
+    display: flex;
+}
+
+.weapons-images .ucgen-price{
+    font-size: 13px;
+    display: flex;
+    color: rgba(246, 206, 14, 1);
+    align-items: center;
+    gap: 8px;
+    margin-top: 15px;
+    align-items: center;
+}
+.weapons-images .ucgen-price img{
+    width: 17px;
+    height: 17px;
+}
+.weapons-images button {
+    background-color: rgba(246, 206, 14, 1);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    border-radius: 20px;
+    width: 120px;
+    height: 35px;
+    margin-top: 15px;
+}
+
+.weapons-images button .nft22{
+    border-radius: 100%;
+    background-color: #171717;
+    color: rgba(246, 206, 14, 1);
+    font-size: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 23px;
+    height: 23px;
+}
+/* clothess+******************************************************** */
+.clothes{
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: white;
+}
+.clothes-image{
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 30px;
+    gap: 15px;
+}
+.clothes-image .clothe1, .clothe2, .clothe3, .clothe4{
+    display: flex; 
+    background-color: #212121;
+    border-radius: 20px; 
+}
+.clothes-image  .clothe1 img, .clothe2 img, .clothe3 img, .clothe4 img{
+    width: 110px;
+    height: 210px;
+    padding-top: 20px;
+}
+.clothes-image h2, p{
+    color: white;
+    padding-top: 13px;
+    padding-bottom: 13px;
+   
+}
+.clothes-image .ucgen-price{
+    font-size: 13px;
+    display: flex;
+    color: rgba(246, 206, 14, 1);
+    align-items: center;
+    gap: 8px;
+    margin-top: 15px;
+    align-items: center;
+}
+
+.clothes-image .ucgen-price img{
+    width: 17px;
+    height: 17px;
+    padding: 0;
+}
+
+.clothes-image button {
+    background-color: rgba(246, 206, 14, 1);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    border-radius: 20px;
+    width: 120px;
+    height: 35px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.clothes-image button .nft22{
+    border-radius: 100%;
+    background-color: #171717;
+    color: rgba(246, 206, 14, 1);
+    font-size: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 23px;
+    height: 23px;
+}
+/* vehicles+************************************************************* */
+.vehicles{
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: white;
+}
+.vehicles-images{
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 30px;
+    gap: 15px;
+}
+.vehicles-images p{
+    max-width: 180px;
+    font-size: 12,5px;
+}
+.vehicles-images .vehicles1, .vehicles2, .vehicles3, .vehicles4{
+    display: flex; 
+    flex-direction: column;
+    background-color: #212121;
+    border-radius: 20px; 
+    padding: 15px;
+    
+}
+
+.vehicles-images .vehicles img, .vehicles img, .vehicles img, .vehicles img{
+    width: 300px;
+    height: 120px;
+}
+.vehicles-images .vehicles-desc{
+    display: flex;
+}
+
+.vehicles-images .ucgen-price{
+    font-size: 13px;
+    display: flex;
+    color: rgba(246, 206, 14, 1);
+    align-items: center;
+    gap: 8px;
+    margin-top: 15px;
+    align-items: center;
+}
+.vehicles-images .ucgen-price img{
+    width: 17px;
+    height: 17px;
+}
+.vehicles-images button {
+    background-color: rgba(246, 206, 14, 1);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    border-radius: 20px;
+    width: 120px;
+    height: 35px;
+    margin-top: 15px;
+   
+}
+
+.vehicles-images button .nft22{
+    border-radius: 100%;
+    background-color: #171717;
+    color: rgba(246, 206, 14, 1);
+    font-size: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 23px;
+    height: 23px;
+}
+/* footer +************************************/
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #212121;
+    padding: 20px 60px 20px 60px;
+    margin-top: 90px;
+}
+
+.footer-button{
+    display: flex;
+    gap: 40px;
+}
+
+.footer-button .button1, .button2, .button3{
+    display: flex;
+    gap: 10px;
+    border-radius: 20px;
+    width: 190px;
+    height: 38px;
+    border: 2px solid white;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: space-around;
+}
+
+.footer-right img{
+    width: 18px;
+    height: 18px;
+}
